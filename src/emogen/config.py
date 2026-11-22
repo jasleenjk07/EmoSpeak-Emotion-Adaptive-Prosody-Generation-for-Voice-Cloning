@@ -1,4 +1,4 @@
-"""Project-wide paths and audio settings for EMOGEN."""
+"""Project-wide paths and audio settings for EMOSPEAK."""
 
 from pathlib import Path
 

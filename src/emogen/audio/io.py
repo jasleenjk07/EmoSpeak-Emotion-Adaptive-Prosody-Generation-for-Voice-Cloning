@@ -1,4 +1,4 @@
-"""Load, save, and inspect WAV audio for EMOGEN."""
+"""Load, save, and inspect WAV audio for EMOSPEAK."""
 
 from pathlib import Path
 import numpy as np
