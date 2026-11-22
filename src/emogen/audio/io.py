@@ -10,7 +10,7 @@ def save_wav(path: Path | str, audio: np.ndarray, sample_rate: int) -> Path:
     sf.write(path, audio, sample_rate)
     return path
 
-def load_wav(path: Path| str) -> tuple[np.ndarray, int]:
+def load_wav(path: Path | str) -> tuple[np.ndarray, int]:
     """Load a WAV file and return (audio, sample_rate)."""
     path = Path(path)
     audio, sample_rate = sf.read(path, dtype="float32")
@@ -27,5 +27,5 @@ def describe_audio(audio: np.ndarray, sample_rate: int) -> dict:
         "num_samples": int(num_samples),
         "sample_rate": int(sample_rate),
         "duration_sec": float(duration_sec),
-        "peak": peak
+        "peak": peak,
     }
