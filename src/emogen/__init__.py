@@ -1,0 +1,1 @@
+"""EMOGEN core package (AI/ML pipeline)."""
