@@ -6,14 +6,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from emospeak.config import(
+from emogen.config import (
     SAMPLE_RATE,
     DEFAULT_RECORD_SECONDS,
     DATA_RAW,
     ensure_data_dirs,
 )
-from empsoeak.audio.record import record_mono
-from emospeak.audio.io import save_wav, describe_audio
+from emogen.audio.record import record_mono
+from emogen.audio.io import save_wav, describe_audio
 
 def main() -> None:
     ensure_data_dirs()
